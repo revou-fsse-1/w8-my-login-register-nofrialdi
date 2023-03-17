@@ -1,6 +1,6 @@
 # Login/Register Website
 
-![banner](mockup.jpg)
+![banner](assets/mockup.jpg)
 
 ## Pages
 
@@ -15,15 +15,23 @@
 
 2. If you want to add an account, please register with the following rules:
 
-   > Email
+   > Email :
 
    - Input type must email
    - Validate must fill
 
-   > Password
+   > Password :
 
    - Input type must text
    - Validate must fill
    - Validate have minimun 1 Uppercase
    - Validate have minimun 1 LowerCase
    - Validate have minimun 1 number
+
+## Screenshot
+
+1. Login / Register :
+   ![login](assets/login.png)
+
+2. Homepage :
+   ![homepage](assets/homepage.png)
