@@ -4,7 +4,7 @@
 
 ## Links/URLs:
 
-[my-login-register.netlify.app](my-login-register.netlify.app)
+[https://my-login-register.netlify.app/](https://my-login-register.netlify.app/)
 
 ## Pages
 
