@@ -2,6 +2,10 @@
 
 ![banner](assets/mockup.jpg)
 
+## Links/URLs:
+
+[my-login-register.netlify.app](my-login-register.netlify.app)
+
 ## Pages
 
 - Login / Register
