@@ -38,10 +38,15 @@ function addData() {
   let name = document.getElementById("inputName").value;
   let age = document.getElementById("inputAge").value;
   let email = document.getElementById("inputEmail").value;
+
+  var numbers = /[0-9]/g;
+
   var emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!email.match(emailValid)) {
     alert("You have to provide a valid email address!");
+  } else if (!age.match(numbers)) {
+    alert("Please enter your age using numbers");
   } else {
     data.push({ name: name, age: age, email: email });
     alert("add data succses");
