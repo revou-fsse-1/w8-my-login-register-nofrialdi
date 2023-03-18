@@ -8,6 +8,7 @@ function signup() {
   var lowerCaseLetters = /[a-z]/g;
   var upperCaseLetters = /[A-Z]/g;
   var numbers = /[0-9]/g;
+  var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const check = data.find((a) => a.email === name.value);
   if (name.value.length == 0 && password.value.length == 0) {
@@ -16,6 +17,8 @@ function signup() {
     alert("Please fill in email");
   } else if (password.value.length == 0) {
     alert("Please fill in password");
+  } else if (!name.value.match(validEmail)) {
+    alert("You have to provide a valid email address!");
   } else if (check !== undefined) {
     alert("Email already registered");
   } else if (password.value.length > 8) {
