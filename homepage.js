@@ -35,12 +35,18 @@ window.onload = function () {
 
 // menambah data ke dalam objek data
 function addData() {
-  let name = document.querySelector("#inputName").value;
-  let age = document.querySelector("#inputAge").value;
-  let email = document.querySelector("#inputEmail").value;
-  data.push({ name: name, age: age, email: email });
-  showData();
-  alert("Data added successfully");
+  let name = document.getElementById("inputName").value;
+  let age = document.getElementById("inputAge").value;
+  let email = document.getElementById("inputEmail").value;
+  var emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!email.match(emailValid)) {
+    alert("You have to provide a valid email address!");
+  } else {
+    data.push({ name: name, age: age, email: email });
+    alert("add data succses");
+    showData();
+  }
 }
 
 // mengedit data dalam objek data
